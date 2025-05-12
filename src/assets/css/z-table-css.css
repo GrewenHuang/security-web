@@ -1,0 +1,43 @@
+.z-table-box>table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ebebeb;
+	border-right: none;
+}
+
+.z-table-box>table>thead>tr>th {
+	text-align: center;
+	background: rgb(248, 248, 248);
+	color: #000;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.z-table-box>table>tbody>tr>td {
+	text-align: center;
+	border-right: 1px solid #ebebeb;
+}
+
+.z-table-box>table>thead>tr>th>span,
+.z-table-box>table>tbody>tr>td>span {
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+}
+
+.z-table-box>table>tbody>tr:hover {
+	background: rgba(245, 247, 250, 1);
+}
+
+.z-table-box .tr-border {
+	border-bottom: 1px solid #ebebeb;
+}
+.z-table-box .tr-border .set-box {
+	padding-left: 30px;
+	text-align: left;
+}
+
+.z-table-box .tr-border .set-box span {
+	color: #DC2828;
+	margin-left: 15px;
+}

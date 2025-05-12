@@ -1,0 +1,46 @@
+.my-transition {
+  background: red;
+}
+@keyframes shine {
+  /*闪耀动画*/
+  0% {
+    background-position: 0 0;
+    transform: scale(1);
+    -webkit-background-size: 60px;
+    /*设置背景大小*/
+  }
+
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.05);
+    -webkit-background-size: 60px;
+    /*设置背景大小*/
+  }
+}
+
+@keyframes bounce {
+  /*标点下坠动画*/
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -76px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -38px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -10px, 0);
+  }
+}

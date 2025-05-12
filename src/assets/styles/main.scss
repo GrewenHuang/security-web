@@ -1,0 +1,225 @@
+
+*{ margin:0;padding:0;box-sizing: border-box; }
+body{font-size: 14px;}
+ol, ul, li { list-style: none; }
+a {
+  text-decoration: none;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #2c3e50;
+}
+
+.hp{
+	height: 100% !important;
+}
+
+.wp{
+	width: 100% !important;
+}
+
+.mt10{
+  margin-top: 10px;
+}
+
+.mt{
+  margin-top: 20px;
+}
+
+.mb{
+  margin-bottom: 20px;
+}
+
+.mtb{
+  margin: 20px 0;
+}
+
+.warp{
+	height: 100%;
+}
+
+.el{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nopad{
+	padding: 0;
+}
+
+.f{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&.fs{
+		justify-content: flex-start;
+	}
+	&.fe{
+		justify-content: flex-end;
+	}
+	&.fc{
+		justify-content: center;
+	}
+	&.fsa{
+		justify-content: space-around;
+	}
+	&.fb{
+		justify-content: space-between;
+	}
+	&.fn{
+		flex-direction: column;
+	}
+	&.fp{
+		flex-wrap: wrap;
+	}
+	&.vfs{
+		align-items: flex-start;
+	}
+}
+
+.flex,.fl{
+  flex: 1;
+}
+.fln{
+  flex: none;
+}
+.fln2{
+  flex: 1 0 auto;
+}
+
+
+
+
+.twoColumn{
+  .el-form-item{
+    width: 50%;
+    &.line20{
+      .el-form-item__label{
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.el-table /deep/ .myTable th{
+  background: #eee;
+}
+
+/* 弹窗自定义样式 */
+.el-dialog__wrapper{
+    display: flex;
+    align-items: center;
+  /deep/ .el-dialog{
+    margin: auto !important;
+  }
+  /deep/ .multipleImgDialog{
+    width: 1000px;
+    margin: auto !important;
+    &.hp90{
+      height: 90%;
+      .el-dialog__body{
+        padding: 20px !important;
+      }
+    }
+  }
+  /deep/ .multipleImgDialog-s{
+    width: 400px;
+    margin: auto !important;
+    &.hp90{
+      height: 90%;
+      .el-dialog__body{
+        padding: 20px !important;
+      }
+    }
+  }
+  
+  /deep/ .customDialog{
+    margin: auto !important;
+    &.hp90{
+      height: 90%;
+      .el-dialog__body{
+        height: calc(100% - 54px);
+        padding: 0 20px ;
+      }
+    }
+  }
+}
+
+/* 搜索栏自定义样式 */
+.toolbar{
+  margin-bottom:10px;
+  .el-col{
+    .el-form-item{
+      width: 100%;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      /deep/ .el-form-item__content{
+        width: 100%;
+      }
+    }
+  }
+  .el-card__body{
+    padding:10px;
+  }
+  .el-form-item{
+    margin-bottom: 0px;
+  }
+  .last-item{
+    margin-right: 0;
+  }
+}
+
+.showImg{
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  padding-bottom: 0;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+.el-textarea__inner{
+  min-height: 60px !important;
+}
+
+.customPagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+
+.el-menu .iconfont {
+  vertical-align: baseline;
+  margin-right: 6px;
+}
+
+.el-menu .fa {
+  vertical-align: middle;
+  width: 20px;
+  text-align: center;
+  margin-right: 6px;
+  font-size: 20px;
+}
+
+.warp-breadcrum{
+  margin: 5px 10px 15px 0px;
+}
+
+.el-radio__inner,.el-checkbox__inner{
+	border-color: $color;
+}
+
+.amap-logo,
+.amap-copyright{
+	display: none !important;
+}

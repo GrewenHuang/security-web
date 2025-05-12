@@ -1,0 +1,21 @@
+/* 改变主题色变量 */
+$--color-primary: #4D6CEB; /* 集团主题色 */
+$--color-primary-1: #1A43A9; /* 路桥主题色 */
+$--color-primary-2: #004BFF; /* 公交主题色 */
+$--color-warning: #FE912E;
+$--color-danger: #FE3F51;
+
+$--theme-primary: #3764ff;
+$--theme-info: #fae100;
+$--theme-warning: #f09614;
+$--theme-danger: #dc2828;
+
+:export {
+    colorPrimary: $--theme-primary;
+    colorInfo: $--theme-info;
+    colorWarning: $--theme-warning;
+    colorDanger: $--theme-danger;
+    thtme1: $--color-primary;
+    theme2: $--color-primary;
+    theme3: $--color-primary;
+}
